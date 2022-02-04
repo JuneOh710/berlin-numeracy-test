@@ -1,0 +1,23 @@
+.jspsych-content-wrapper {
+    max-width: 80%;
+    text-align: start;
+}
+
+input {
+    padding: 15px 10px;
+}
+
+.jspsych-content {
+    text-align: start;
+}
+
+
+
+#jspsych-survey-html-form-next {
+    align-self: center;
+    padding: 10px 50px;
+    border-radius: 10px;
+    color: aliceblue;
+    background-color: #0276FD;
+    border-color: #0276FD;
+}
