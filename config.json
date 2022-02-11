@@ -1,0 +1,14 @@
+{
+    "name": "Berlin Numeracy Test",
+    "exp_id": "berlin-numeracy-test",
+    "description": "A short series of questions to test the particpants.",
+    "instructions": "Type the best answer.",
+    "url": "https://github.com/JuneOh710/berlin-numeracy-test",
+    "template":"jspsych",
+    "contributors": [
+                     "Daniel J Wilson",
+                     "June Oh"
+                    ], 
+    "time":5,
+    "reference": ["http://www.riskliteracy.org/files/BNT%20Versions.pdf"]
+}
