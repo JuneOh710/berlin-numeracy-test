@@ -97,8 +97,11 @@ versionA.push(question1A);
 
 const question2A = {
     type: jsPsychSurveyHtmlForm,
-    preamble: `<p>Out of 1,000 people in a small town 500 are mem- bers of a choir. Out of these 500
-members in the choir 100 are men. Out of the 500 inhabitants that are not in the choir 300 are men. What is the probability that a randomly drawn man is a member of the choir? (please indicate the probability in percent).</p>`,
+    preamble: `<p>Out of 1,000 people in a small town 500 are members of a choir. Out of these 500
+members in the choir 100 are men. <br>
+Out of the 500 inhabitants that are not in the choir 300 are men.<br>
+ What is the probability that a randomly drawn man is a member of the choir?<br>
+ (please indicate the probability in percent).</p>`,
     html: '<p><input type="number" id="test-resp-box" name="response" size="5" required/>  &#37;</p>',
     autofocus: 'test-resp-box'
 }
@@ -109,7 +112,9 @@ const question3A = {
     type: jsPsychSurveyHtmlForm,
     preamble: `<p>
 
-        Imagine we are throwing a loaded die (6 sides). The probability that the die shows a 6 is twice as high as the probability of each of the other numbers. On average, out of these 70 throws, how many times would the die show the number 6?
+        Imagine we are throwing a loaded die (6 sides). <br>
+         The probability that the die shows a 6 is twice as high as the probability of each of the other numbers. <br>
+         On average, out of these 70 throws, how many times would the die show the number 6?
         
         </p>`,
     html: '<p><input type="number" id="test-resp-box" name="response" size="5" required/>  out of 70 throws.</p>',
@@ -122,7 +127,10 @@ const question4A = {
     type: jsPsychSurveyHtmlForm,
     preamble: `<p>
 
-        In a forest 20% of mushrooms are red, 50% brown and 30% white. A red mushroom is poisonous with a probability of 20%. A mushroom that is not red is poisonous with a probability of 5%. What is the probability that a poisonous mushroom in the forest is red?
+        In a forest 20% of mushrooms are red, 50% brown and 30% white.<br>
+         A red mushroom is poisonous with a probability of 20%.<br>
+          A mushroom that is not red is poisonous with a probability of 5%.<br>
+          What is the probability that a poisonous mushroom in the forest is red?
 
         </p>`,
     html: '<p><input type="number" id="test-resp-box" name="response" size="5" required/>  &#37; </p>',
