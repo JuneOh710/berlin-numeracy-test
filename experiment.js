@@ -21,7 +21,7 @@ const settings = {
     on_finish: function (data) {
         // Serialize the data
         var promise = new Promise(function (resolve, reject) {
-            var data = jsPsych.data.dataAsJSON();
+            var data = jsPsych.data.get().json();
             resolve(data);
         })
 
@@ -50,7 +50,7 @@ async function sendResults(results) {
         .then(handleErrors)
         .then(response => console.log("Request complete! response: ", response))
         .catch(error =>
-            jsPsych.data.localSave('berlin_numeracy_test_results.csv', 'csv')
+            jsPsych.data.get().localSave('csv', 'berlin_numeracy_test_results.csv')
         );
 }
 
