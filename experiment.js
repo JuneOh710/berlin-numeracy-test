@@ -89,7 +89,7 @@ const question1A = {
     type: jsPsychSurveyHtmlForm,
     preamble: `<p>Imagine we are throwing a five-sided die 50 times. On average, out of these 50 throws how many times would this five-sided die show an odd number (1, 3 or 5)?</p>
     <p></p>`,
-    html: '<p><input type="number" id="test-resp-box" name="response" size="5" required/>  out of 50 throws</p > ',
+    html: '<p id="input"><input type="number" id="test-resp-box" name="response" size="5" required/>  out of 50 throws</p > ',
     autofocus: 'test-resp-box'
 }
 versionA.push(question1A);
@@ -102,7 +102,7 @@ members in the choir 100 are men. <br>
 Out of the 500 inhabitants that are not in the choir 300 are men.<br>
  What is the probability that a randomly drawn man is a member of the choir?<br>
  (please indicate the probability in percent).</p>`,
-    html: '<p><input type="number" id="test-resp-box" name="response" size="5" required/>  &#37;</p>',
+    html: '<p id="input"><input type="number" id="test-resp-box" name="response" size="5" required/>  &#37;</p>',
     autofocus: 'test-resp-box'
 }
 versionA.push(question2A);
@@ -117,7 +117,7 @@ const question3A = {
          On average, out of these 70 throws, how many times would the die show the number 6?
         
         </p>`,
-    html: '<p><input type="number" id="test-resp-box" name="response" size="5" required/>  out of 70 throws.</p>',
+    html: '<p id="input"><input type="number" id="test-resp-box" name="response" size="5" required/>  out of 70 throws.</p>',
     autofocus: 'test-resp-box'
 }
 versionA.push(question3A);
@@ -133,7 +133,7 @@ const question4A = {
           What is the probability that a poisonous mushroom in the forest is red?
 
         </p>`,
-    html: '<p><input type="number" id="test-resp-box" name="response" size="5" required/>  &#37; </p>',
+    html: '<p id="input"><input type="number" id="test-resp-box" name="response" size="5" required/>  &#37; </p>',
     autofocus: 'test-resp-box'
 }
 versionA.push(question4A);

@@ -7,12 +7,17 @@ input {
     padding: 15px 10px;
 }
 
+
+
 .jspsych-content {
     text-align: start;
 }
-
-
-
+/* form {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+} */
 #jspsych-survey-html-form-next {
     align-self: center;
     padding: 10px 50px;
