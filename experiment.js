@@ -64,19 +64,21 @@ const order = number ? [versionA, versionB] : [versionB, versionA];
 
 const welcome = {
     type: jsPsychHtmlKeyboardResponse,
+    choices: ["Enter"],
     stimulus: `<p>Welcome to the experiment! In this task, we will be testing you ability to estimate the numerical answers of several questions.
-         Press any key to continue on to the instructions.</p>
+         Press the <b>ENTER</b> key to continue on to the instructions.</p>
     `
 }
 block_1.push(welcome);
 
 const instructions_1 = {
     type: jsPsychHtmlKeyboardResponse,
+    choices: ["Enter"],
     stimulus: `<p>In this task, you will be estimating the answers to 9 questions. You will see one question at a time and your job is to
         make a reasonable guess as to what the answer is.</p><p> Each question requires a numerical response in the units that are specified.
         Once you have come up with an estimate, please type the number into the textbox provided and click "continue" to move on to the 
         next question.</p><p>Once again, just a reminder that you are NOT expected to know the exact answer to these questions. We only ask that
-        you make a reasonable guess or give your best estimate.</p><p>When you are ready to begin, press any key.</p>
+        you make a reasonable guess or give your best estimate.</p><p>When you are ready to begin, press the <b>ENTER</b> key.</p>
     `
 }
 block_1.push(instructions_1);
