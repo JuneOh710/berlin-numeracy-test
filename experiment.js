@@ -35,6 +35,7 @@ const settings = {
 async function sendResults(results) {
     function handleErrors(response) {
         if (!response.ok) {
+            console.log("===bad response===")
             throw Error(response.statusText);
         }
         return response;
