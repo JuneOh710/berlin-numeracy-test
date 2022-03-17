@@ -32,8 +32,6 @@ const settings = {
 
 }
 
-const jsPsych = initJsPsych(settings);
-
 async function sendResults(results) {
     function handleErrors(response) {
         if (!response.ok) {
@@ -48,12 +46,14 @@ async function sendResults(results) {
         body: JSON.stringify({ data: results })
     })
         .then(handleErrors)
-        .then(response => console.log("Request complete! response: ", response))
+        // .then(response => console.log("Request complete! response: ", response))
+        .then(fetch("/next"))
         .catch(error =>
             jsPsych.data.get().localSave('csv', 'berlin_numeracy_test_results.csv')
         );
 }
 
+const jsPsych = initJsPsych(settings);
 const block_1 = [];
 const versionA = [];
 const versionB = [];
